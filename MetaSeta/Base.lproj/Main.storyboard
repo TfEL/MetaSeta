@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,18 +642,17 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                    <window key="window" title="MetaSeta" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
@@ -667,15 +667,277 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="511"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="jka-rd-NW8">
+                                <rect key="frame" x="0.0" y="488" width="350" height="5"/>
+                                <animations/>
+                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <font key="titleFont" metaFont="system"/>
+                            </box>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="lCn-Ib-5Em">
+                                <rect key="frame" x="0.0" y="418" width="350" height="5"/>
+                                <animations/>
+                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <font key="titleFont" metaFont="system"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jf5-y1-kZ0">
+                                <rect key="frame" x="75" y="437" width="257" height="14"/>
+                                <animations/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Modified: " id="1lg-Am-ZNA">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raa-pr-oTa">
+                                <rect key="frame" x="75" y="461" width="257" height="14"/>
+                                <animations/>
+                                <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="No File Selected" id="wWe-Wi-3tP">
+                                    <font key="font" metaFont="systemBold" size="11"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-xn-ybs">
+                                <rect key="frame" x="0.0" y="490" width="350" height="22"/>
+                                <animations/>
+                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" pathStyle="popUp" id="wNV-Xr-IV4">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <url key="url" string="file:///Users/"/>
+                                    <allowedTypes>
+                                        <string>mov</string>
+                                        <string>mp4</string>
+                                        <string>m4v</string>
+                                        <string>mpeg</string>
+                                        <string>m4a</string>
+                                    </allowedTypes>
+                                </pathCell>
+                                <connections>
+                                    <action selector="originalFileSelected:" target="XfG-lQ-9wD" id="UeL-e8-ZRX"/>
+                                </connections>
+                            </pathControl>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-KD-04Z">
+                                <rect key="frame" x="11" y="432" width="48" height="48"/>
+                                <animations/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSFolder" id="yag-Ez-7ve"/>
+                            </imageView>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Am-q2-NSK">
+                                <rect key="frame" x="80" y="376" width="258" height="26"/>
+                                <animations/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="35N-b5-sYl">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="S8w-IU-nqW">
+                                        <items>
+                                            <menuItem title="Conference Recording" keyEquivalent="C" id="nrO-NM-DqY">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Event Recording" tag="1" keyEquivalent="E" id="1D0-IT-Ai4">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Guest Speaker Recording" tag="2" keyEquivalent="G" id="bYY-Mh-9db">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Animation / Resource" tag="3" keyEquivalent="A" id="LjB-TR-xwn">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-fp-YMw">
+                                <rect key="frame" x="80" y="345" width="258" height="26"/>
+                                <animations/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Ojr-tI-4bx">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="HU0-do-N2v">
+                                        <items>
+                                            <menuItem title="High Priority Archival" image="NSAddTemplate" keyEquivalent="H" id="pl3-ar-4kU">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Low Priority Archival" image="NSRemoveTemplate" tag="1" keyEquivalent="L" id="4aw-3b-guR">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dh-Yq-OAw">
+                                <rect key="frame" x="16" y="116" width="319" height="135"/>
+                                <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="MPa-1Z-UJb">
+                                    <rect key="frame" x="1" y="1" width="317" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" importsGraphics="NO" richText="NO" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="hNd-YI-VBR">
+                                            <rect key="frame" x="0.0" y="0.0" width="317" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="317" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="317" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <animations/>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="nyh-KL-anl">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="75V-oU-yii">
+                                    <rect key="frame" x="302" y="1" width="16" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWX-eU-b9K">
+                                <rect key="frame" x="266" y="13" width="70" height="32"/>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cof-2h-V9J">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveButtonPress:" target="XfG-lQ-9wD" id="mVa-AM-ToL"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvI-1I-uC2">
+                                <rect key="frame" x="14" y="382" width="34" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Type" id="AAp-at-BCa">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-bd-KPE">
+                                <rect key="frame" x="14" y="351" width="48" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Priority" id="FES-B7-GkI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgJ-oJ-fft">
+                                <rect key="frame" x="80" y="314" width="258" height="26"/>
+                                <animations/>
+                                <popUpButtonCell key="cell" type="push" title="Owned by DECD / SA Gov in full" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="SZI-zO-BBj" id="Mpt-JT-2T8">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="yAo-mU-2Ni">
+                                        <items>
+                                            <menuItem title="Owned by DECD / SA Gov in full" state="on" keyEquivalent="1" id="SZI-zO-BBj">
+                                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Purchased / Exclusive rights for DECD" tag="1" keyEquivalent="2" id="quh-iw-QDx">
+                                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Unknown / Reuse not permitted" tag="2" keyEquivalent="3" id="Nn1-r1-1Fs">
+                                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97h-b4-EH1">
+                                <rect key="frame" x="14" y="320" width="64" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright" id="Idl-Fl-kYx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-d4-vyh">
+                                <rect key="frame" x="14" y="259" width="165" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Description (⌘–i in Finder)" id="dBW-bk-i5P">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-iL-TPI">
+                                <rect key="frame" x="80" y="283" width="258" height="26"/>
+                                <animations/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="uiv-De-uId">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="vMs-9r-1rj">
+                                        <items>
+                                            <menuItem title="Full or complete rendered project" keyEquivalent="N" id="mMC-Du-edF">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Part of or partial rendered project" tag="1" keyEquivalent="M" id="e33-hB-tkn">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Unknown other render" tag="2" keyEquivalent="B" id="N1m-nL-Ukp">
+                                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kpr-tA-Gk1">
+                                <rect key="frame" x="14" y="289" width="41" height="17"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Polish" id="M6L-qp-Jcf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-HG-mjy">
+                                <rect key="frame" x="16" y="20" width="246" height="87"/>
+                                <animations/>
+                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="2gK-c0-Q6a">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">Ready to seta some meta 👌🏼
+
+Choose, or drop a file to begin.</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <animations/>
                     </view>
+                    <connections>
+                        <outlet property="copyrightSelector" destination="cgJ-oJ-fft" id="51z-Bi-Iq8"/>
+                        <outlet property="descriptionOutlet" destination="1dh-Yq-OAw" id="yH1-jk-NPa"/>
+                        <outlet property="descriptionTextView" destination="hNd-YI-VBR" id="Aja-zd-L3E"/>
+                        <outlet property="fileNameLabel" destination="raa-pr-oTa" id="rJV-qA-ukf"/>
+                        <outlet property="finalNameLabel" destination="8AR-HG-mjy" id="8GK-xG-REp"/>
+                        <outlet property="iconOutlet" destination="A4Z-KD-04Z" id="J6D-6Z-7a9"/>
+                        <outlet property="modifiedDateLabel" destination="Jf5-y1-kZ0" id="bdH-zb-ma6"/>
+                        <outlet property="originalFile" destination="0ep-xn-ybs" id="hN9-w7-0nQ"/>
+                        <outlet property="polishSelector" destination="KXo-iL-TPI" id="m8I-tQ-Zfv"/>
+                        <outlet property="prioritySelector" destination="Irz-fp-YMw" id="sSi-d5-79J"/>
+                        <outlet property="saveButtonOutlet" destination="UWX-eU-b9K" id="kZb-Y6-76s"/>
+                        <outlet property="typeSelector" destination="1Am-q2-NSK" id="iTD-O1-xfv"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="786.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSFolder" width="32" height="32"/>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
+    </resources>
 </document>

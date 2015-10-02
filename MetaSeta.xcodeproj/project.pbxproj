@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120DAEF31BBCF6F500E0DF40 /* categoryNameMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 120DAEF21BBCF6F500E0DF40 /* categoryNameMapper.m */; settings = {ASSET_TAGS = (); }; };
 		12859F0F1BBCF1F000C47C99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12859F0E1BBCF1F000C47C99 /* AppDelegate.m */; };
 		12859F121BBCF1F000C47C99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12859F111BBCF1F000C47C99 /* main.m */; };
 		12859F151BBCF1F000C47C99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12859F141BBCF1F000C47C99 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120DAEF11BBCF6F500E0DF40 /* categoryNameMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoryNameMapper.h; sourceTree = "<group>"; };
+		120DAEF21BBCF6F500E0DF40 /* categoryNameMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoryNameMapper.m; sourceTree = "<group>"; };
 		12859F0A1BBCF1F000C47C99 /* MetaSeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaSeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12859F0D1BBCF1F000C47C99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12859F0E1BBCF1F000C47C99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				12859F1E1BBCF1F000C47C99 /* Info.plist */,
 				12859F161BBCF1F000C47C99 /* MetaSeta.xcdatamodeld */,
 				12859F101BBCF1F000C47C99 /* Supporting Files */,
+				120DAEF11BBCF6F500E0DF40 /* categoryNameMapper.h */,
+				120DAEF21BBCF6F500E0DF40 /* categoryNameMapper.m */,
 			);
 			path = MetaSeta;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					12859F091BBCF1F000C47C99 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CW4CCV9S93;
 					};
 				};
 			};
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12859F151BBCF1F000C47C99 /* ViewController.m in Sources */,
+				120DAEF31BBCF6F500E0DF40 /* categoryNameMapper.m in Sources */,
 				12859F181BBCF1F000C47C99 /* MetaSeta.xcdatamodeld in Sources */,
 				12859F121BBCF1F000C47C99 /* main.m in Sources */,
 				12859F0F1BBCF1F000C47C99 /* AppDelegate.m in Sources */,
@@ -252,11 +259,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MetaSeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.tfel.MetaSeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,11 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MetaSeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.tfel.MetaSeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -291,6 +304,7 @@
 				12859F231BBCF1F000C47C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

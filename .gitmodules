@@ -1,0 +1,3 @@
+[submodule "openmeta"]
+	path = openmeta
+	url = git@github.com:aidancornelius/openmeta.git
