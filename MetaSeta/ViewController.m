@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "categoryNameMapper.h"
+#import "OpenMeta.h"
 
 @implementation ViewController
 

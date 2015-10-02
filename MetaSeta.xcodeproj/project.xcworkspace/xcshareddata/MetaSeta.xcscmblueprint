@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CA87340178BE7BE0C93CC0BC2064BCC3001B4B84",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CA87340178BE7BE0C93CC0BC2064BCC3001B4B84" : 0,
+    "147AE988AEC81E2D75FCBD8FF5EC1A6468E60818" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7BC6F396-3DB4-43AE-98FA-CE994B89B3EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CA87340178BE7BE0C93CC0BC2064BCC3001B4B84" : "MetaSeta\/",
+    "147AE988AEC81E2D75FCBD8FF5EC1A6468E60818" : "MetaSeta\/openmeta\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MetaSeta",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MetaSeta.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:aidancornelius\/openmeta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147AE988AEC81E2D75FCBD8FF5EC1A6468E60818"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:TfEL\/MetaSeta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA87340178BE7BE0C93CC0BC2064BCC3001B4B84"
+    }
+  ]
+}

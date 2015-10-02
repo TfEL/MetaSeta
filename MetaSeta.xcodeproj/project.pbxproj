@@ -14,6 +14,7 @@
 		12859F181BBCF1F000C47C99 /* MetaSeta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12859F161BBCF1F000C47C99 /* MetaSeta.xcdatamodeld */; };
 		12859F1A1BBCF1F000C47C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12859F191BBCF1F000C47C99 /* Assets.xcassets */; };
 		12859F1D1BBCF1F000C47C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12859F1B1BBCF1F000C47C99 /* Main.storyboard */; };
+		12B16D551BBE0EE0004D20CD /* OpenMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B16D541BBE0EE0004D20CD /* OpenMeta.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		12859F191BBCF1F000C47C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12859F1C1BBCF1F000C47C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12859F1E1BBCF1F000C47C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B16D531BBE0EE0004D20CD /* OpenMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenMeta.h; path = openmeta/OpenMeta.h; sourceTree = SOURCE_ROOT; };
+		12B16D541BBE0EE0004D20CD /* OpenMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenMeta.m; path = openmeta/OpenMeta.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +64,10 @@
 		12859F0C1BBCF1F000C47C99 /* MetaSeta */ = {
 			isa = PBXGroup;
 			children = (
-				12859F0D1BBCF1F000C47C99 /* AppDelegate.h */,
-				12859F0E1BBCF1F000C47C99 /* AppDelegate.m */,
-				12859F131BBCF1F000C47C99 /* ViewController.h */,
-				12859F141BBCF1F000C47C99 /* ViewController.m */,
-				12859F191BBCF1F000C47C99 /* Assets.xcassets */,
-				12859F1B1BBCF1F000C47C99 /* Main.storyboard */,
-				12859F1E1BBCF1F000C47C99 /* Info.plist */,
-				12859F161BBCF1F000C47C99 /* MetaSeta.xcdatamodeld */,
+				12B16D521BBE0ED9004D20CD /* External */,
+				12B16D561BBE0EE9004D20CD /* Classes */,
+				12B16D571BBE0EF2004D20CD /* UI */,
 				12859F101BBCF1F000C47C99 /* Supporting Files */,
-				120DAEF11BBCF6F500E0DF40 /* categoryNameMapper.h */,
-				120DAEF21BBCF6F500E0DF40 /* categoryNameMapper.m */,
 			);
 			path = MetaSeta;
 			sourceTree = "<group>";
@@ -79,9 +75,50 @@
 		12859F101BBCF1F000C47C99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12859F191BBCF1F000C47C99 /* Assets.xcassets */,
+				12859F1E1BBCF1F000C47C99 /* Info.plist */,
+				12859F161BBCF1F000C47C99 /* MetaSeta.xcdatamodeld */,
 				12859F111BBCF1F000C47C99 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12B16D521BBE0ED9004D20CD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				12B16D531BBE0EE0004D20CD /* OpenMeta.h */,
+				12B16D541BBE0EE0004D20CD /* OpenMeta.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		12B16D561BBE0EE9004D20CD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12B16D581BBE0F08004D20CD /* Functions and stuff */,
+				12859F0D1BBCF1F000C47C99 /* AppDelegate.h */,
+				12859F0E1BBCF1F000C47C99 /* AppDelegate.m */,
+				12859F131BBCF1F000C47C99 /* ViewController.h */,
+				12859F141BBCF1F000C47C99 /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		12B16D571BBE0EF2004D20CD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				12859F1B1BBCF1F000C47C99 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		12B16D581BBE0F08004D20CD /* Functions and stuff */ = {
+			isa = PBXGroup;
+			children = (
+				120DAEF11BBCF6F500E0DF40 /* categoryNameMapper.h */,
+				120DAEF21BBCF6F500E0DF40 /* categoryNameMapper.m */,
+			);
+			name = "Functions and stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B16D551BBE0EE0004D20CD /* OpenMeta.m in Sources */,
 				12859F151BBCF1F000C47C99 /* ViewController.m in Sources */,
 				120DAEF31BBCF6F500E0DF40 /* categoryNameMapper.m in Sources */,
 				12859F181BBCF1F000C47C99 /* MetaSeta.xcdatamodeld in Sources */,

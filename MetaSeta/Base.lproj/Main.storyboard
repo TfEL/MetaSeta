@@ -699,7 +699,7 @@
                                 <rect key="frame" x="75" y="461" width="257" height="14"/>
                                 <animations/>
                                 <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="No File Selected" id="wWe-Wi-3tP">
-                                    <font key="font" metaFont="systemBold" size="11"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -796,7 +796,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="75V-oU-yii">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="75V-oU-yii">
                                     <rect key="frame" x="302" y="1" width="16" height="133"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
